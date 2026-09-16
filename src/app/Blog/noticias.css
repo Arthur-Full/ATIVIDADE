@@ -1,0 +1,13 @@
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin-left: 15vh;
+    gap: 40px;
+}
+
+p {
+    text-align: center;
+    margin: 25px 0 25px 0;
+}
+

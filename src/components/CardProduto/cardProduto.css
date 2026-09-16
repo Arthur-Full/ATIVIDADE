@@ -1,0 +1,26 @@
+.card-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: black;
+    max-width: 500px;
+    align-items: center;
+    color: white;
+
+}
+
+.card-wrap img {
+    width: 300px;
+    height: auto;
+
+}
+
+.card-wrap h2 {
+    font-size: auto;
+}
+
+.card-wrap p {
+    font-size: 15px;
+}

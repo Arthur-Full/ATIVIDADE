@@ -1,0 +1,25 @@
+.banner-container-fluid {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 500px;
+
+    background-color: #964cdb;
+    color: white;
+    font-weight: bold;
+
+    padding: 5rem;
+    margin-top: 10rem;
+    margin-bottom: 42rem;
+
+}
+
+.button-cta {
+    padding: 10px 12px;
+    background-color: chocolate;
+    border-radius: 15px;
+
+}

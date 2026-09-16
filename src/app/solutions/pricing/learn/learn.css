@@ -1,0 +1,21 @@
+body {
+    background: #000000;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 9rem;
+    color: #0b20dd;
+}
+
+p {
+    font-size: 3rem;
+}
+
+.Text-corpo {
+    position: absolute;
+    left: 150px;
+    top: 150px;  
+    width: 50%;
+    height: auto;
+}
