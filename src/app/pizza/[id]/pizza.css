@@ -1,0 +1,21 @@
+.container-pizza{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 85vw;
+    margin: auto;
+} 
+
+.wrap-pizza {
+    border-radius: 25px;
+    padding: 10px;
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.wrap-pizza img {
+    height: auto;
+    width: 300px;
+}
