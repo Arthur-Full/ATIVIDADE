@@ -1,20 +1,31 @@
 body {
-    background: rgb(133, 133, 133);
+    background-image: url("./imagens/fundoEffect.jpg");
+    background: rgb(14, 14, 14);
     justify-items: center;
     align-items: center;
 }
 
 h1 {
+    color: white;
     font-size: 100px;
+    margin: 20px 0 20px 0;
 }
 
 h3 {
+    margin: 20px 0 20px 0;
     font-size: 25px;
 }
 
 p {
-    font-size: 25px;
-    margin: 5px 0 5px 0;
+    text-align: left; 
+    font-size: 15px;
+}
+
+span {
+    text-align: left;
+    font-weight: bold;  
+    font-size: 15px;
+    margin-left: 5px;
 }
 
 .algo {
@@ -27,22 +38,35 @@ p {
 }
 
 .bloco-name {
-    background: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  
+    background: rgb(94, 94, 94);
     color: white;
     padding: 0px;
     margin: 20px 0 20px;
     text-align: center;
     border: 2px solid white;
     max-width: 400px;
+    max-height: auto;  
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.bloco-name img {
+    width: 100%;
+    height: auto;
+    border: 2px solid white;
+    background: rgb(255, 255, 255);
 }
 
 .algo-ai {
-    margin-top: 12px;
+    margin-top: 12px;   
 }
 
 .blocos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 4fr)); 
+    gap: 20px;
     margin: auto;
 }

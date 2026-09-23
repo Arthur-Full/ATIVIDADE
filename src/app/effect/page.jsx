@@ -21,9 +21,9 @@ export default function Usuarios() {
                                 <div className="bloco-name" key={user}>
                                     <h3>{user.fircstName}{" "}{user.lastName}</h3>
                                     <img src={user.image} />
-                                    <p>E-mail: <b>{user.email}</b></p>
-                                    <p>Sexualidade: {user.gender}</p>
-                                    <p>Idade: {user.age}</p>
+                                    <p><span>E-mail:</span> {user.email}</p>
+                                    <p><span>Sexualidade:</span> {user.gender}</p>
+                                    <p><span>Idade:</span> {user.age}</p>
                                 </div>
                             )
                         })}
