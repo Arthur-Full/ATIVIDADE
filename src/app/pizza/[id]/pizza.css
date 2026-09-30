@@ -1,21 +1,70 @@
-.container-pizza{
+
+body{
+    background: rgb(255, 236, 211);
+}
+
+.row{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+.container-pizza-int{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
     gap: 10px;
     width: 85vw;
     margin: auto;
+    align-items: flex-start;
 } 
 
-.wrap-pizza {
-    border-radius: 25px;
-    padding: 10px;
-    background-color: cornsilk;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.container-pizza-int h1{
+    font-size: 50px;
+    text-align: center;
+} 
+
+
+.pizza-img {
+    height: auto;
+    width: 85vh;
+    border-radius: 15px;
+    border: 1px solid black;
 }
 
-.wrap-pizza img {
-    height: auto;
-    width: 300px;
+.info-pizza {
+    border: 2px solid black ;
+    padding: 25px;
+    border-radius: 10px;
+    background: rgb(180, 160, 137);
+    font-size: 20px;
+    color: slategrey;
+}
+
+.info {
+    background: white;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+span {
+    color: #000000;
+    font-weight: bold;
+}
+
+.instru {
+    font-size: 45px;
+    font-weight: bold;
+    color: black;
+    border: 2px solid black;
+    border-radius: 15px;
+    background: white;
+    padding: 10;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }

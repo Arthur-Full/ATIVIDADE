@@ -9,29 +9,49 @@ import "./pizza.css"
 export default function Pizza() {
     const params = useParams(); //pega o parametro pelo id que tem no filme encontrado ele sempre joga pra essa página mas ele identifica o id que vc está tentando acessar
     const [pizza, setPizza] = useState();
-    
-    useEffect( () => {
+
+    useEffect(() => {
         const pizzaEncontrado = dados.find(f => f.id == params.id);
         setPizza(pizzaEncontrado);
-    }, [] )
+    }, [])
 
     //duas maneiras e será usado o hook
 
-    return(
-        <main className="container-pizza">
+    return (
+        <main className="container-pizza-int">
+
             {pizza && <>
-            <h1>Nome da pizza:{pizza.name}</h1>
-            <img src={pizza.image} alt=""/>
-            <h3>Tempo de preparo em minutos: {pizza.prepTimeMinutes}</h3>
-            <h3>Tempo de cozimento em minutos: {pizza.cookTimeMinutes}</h3>
-            <h3>Porções: {pizza.servings}</h3>
-            <h3>{pizza.difficulty}</h3>
-            <h3>{pizza.cuisine}</h3>
-            <h3>{pizza.caloriesPerServing}</h3>
-            <h3>{pizza.ingredients}</h3>
-            <h3>{pizza.difficulty}</h3>
-            
-            
+
+
+                <div className="nome"><h1>{pizza.name}</h1></div>   
+
+                <div className="caixa">
+                    <img className="pizza-img" src={pizza.image} alt="" />
+                </div>
+
+                <div className="info-pizza">
+                    <p className="instru">Intruções gerais do prato: </p>
+
+                    <div className="info">
+
+                        <p><span>Tempo de preparo em minutos:</span> {pizza.prepTimeMinutes}</p>
+                        <p><span>Tempo de cozimento em minutos:</span> {pizza.cookTimeMinutes}</p>
+                        <p><span>Quantidade de porções que pode ser servida: </span>{pizza.servings}</p>
+                        <p><span>Dificuldade de preparo: </span>{pizza.difficulty}</p>
+                        <p><span>Pais de origem: </span> {pizza.cuisine}</p>
+                        <p><span>Calorias por porção: </span>{pizza.caloriesPerServing}</p>
+                        <p><span>Ingredientes: </span>{pizza.ingredients}</p>
+                        <p><span>Instruções: </span>{pizza.instructions}</p>
+
+                    </div>
+
+
+                </div>
+
+                <div><button>sdadasdadasda</button></div>
+
+
+
             </>}
         </main>
     )
