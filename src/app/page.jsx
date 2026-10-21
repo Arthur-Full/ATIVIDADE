@@ -5,13 +5,7 @@ import BannerCTA from "@/components/bannerCTA";
 import Rodape from "@/components/footer";
 import Cabecalho from "@/components/header";
 
-const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
-
 export default async function Home() {
-
-  await sleep(3500)
-
-  // throw new Error("Erro simulado!!!");
 
   return (
     <>
